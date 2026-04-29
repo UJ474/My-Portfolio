@@ -156,8 +156,31 @@
         .lang-ml { background-color: var(--gh-purple); }
         .lang-fullstack { background-color: var(--gh-green); }
 
-        .contrib-graph { border: 1px solid var(--gh-border); border-radius: 6px; padding: 16px; margin-bottom: 40px; overflow-x: hidden;}
-        .contrib-title { font-size: 16px; font-weight: 400; margin-bottom: 8px; }
+        .contrib-graph {
+            border: 1px solid var(--gh-border);
+            border-radius: 6px;
+            padding: 16px;
+            margin-bottom: 40px;
+            background: var(--gh-bg);
+        }
+        .contrib-title {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: var(--gh-text-muted);
+        }
+        #contrib-img {
+            display: block;
+            width: auto;
+            max-width: 100%;
+            border-radius: 4px;
+            border: none;
+            padding: 0;
+            background: transparent;
+
+            /* Fix white background from external SVG */
+            filter: invert(1) hue-rotate(180deg) brightness(1.1) contrast(1.1);
+        }
         .graph-squares { display: flex; flex-wrap: wrap; gap: 3px; }
         .g-sq { width: 11px; height: 11px; border-radius: 2px; background: #161b22; outline: 1px solid rgba(255,255,255,0.05); outline-offset: -1px;}
         .g-l1 { background: #0e4429; } .g-l2 { background: #006d32; } .g-l3 { background: #26a641; } .g-l4 { background: #39d353; }
@@ -247,7 +270,7 @@
         <aside class="sidebar">
             <div class="sidebar-header">
                 <!-- REPLACE THIS URL with your actual profile photo URL -->
-                <img src="https://avatars.githubusercontent.com/u/UJ474?v=4" 
+                <img src="./20251230_171106.jpg" 
                      onerror="this.src='https://ui-avatars.com/api/?name=Utkarsh+Jain&background=21262d&color=58a6ff&size=300'"
                      alt="Utkarsh Jain" class="avatar">
                 <div class="vcard-names">
@@ -258,7 +281,7 @@
             
             <!-- EDIT: Update this bio to describe yourself -->
             <div class="user-profile-bio">
-                Full-Stack Developer with strong expertise in data structures, algorithms, and scalable web applications. Competitive programming achievements include Knight @ LeetCode and Pupil @ Codeforces. Proven ability to master new skills independently and tackle complex challenges.
+                Data Analyst skilled in Python, SQL, and data visualization tools such as Power BI and Tableau. Experienced in data cleaning, exploratory data analysis (EDA), and deriving actionable insights from complex datasets. Strong analytical mindset with a focus on transforming raw data into meaningful business decisions.
             </div>
 
             <!-- EDIT: Replace with your actual email -->
@@ -292,59 +315,26 @@
             <div class="skills-section">
                 <h2>Skills &amp; Technologies</h2>
                 <div class="skills-badges">
-                    <span class="badge">Python</span>
-                    <span class="badge">JavaScript</span>
-                    <span class="badge">TypeScript</span>
-                    <span class="badge">React</span>
-                    <span class="badge">React Native</span>
-                    <span class="badge">Next JS</span>
-                    <span class="badge">Node.js</span>
-                    <span class="badge">Express JS</span>
-                    <span class="badge">SQL</span>
-                    <span class="badge">MySQL</span>
-                    <span class="badge">MongoDB</span>
-                    <span class="badge">PostgreSQL</span>
-                    <span class="badge">NoSQL</span>
-                    <span class="badge">Machine Learning</span>
-                    <span class="badge">TensorFlow</span>
-                    <span class="badge">Pandas</span>
-                    <span class="badge">NumPy</span>
-                    <span class="badge">Matplotlib</span>
-                    <span class="badge">LangChain</span>
-                    <span class="badge">LangGraph</span>
-                    <span class="badge">LangSmith</span>
-                    <span class="badge">OpenAI API</span>
-                    <span class="badge">Hugging Face</span>
-                    <span class="badge">GenAI</span>
-                    <span class="badge">LLM</span>
-                    <span class="badge">AWS</span>
-                    <span class="badge">Docker</span>
-                    <span class="badge">Docker Compose</span>
-                    <span class="badge">Kubernetes</span>
-                    <span class="badge">Kafka</span>
-                    <span class="badge">GitHub Actions</span>
-                    <span class="badge">Google Cloud Platform</span>
-                    <span class="badge">Prometheus</span>
-                    <span class="badge">Git and Github</span>
-                    <span class="badge">Linux</span>
-                    <span class="badge">Bash Scripting</span>
-                    <span class="badge">API</span>
-                    <span class="badge">API testing</span>
-                    <span class="badge">Postman</span>
-                    <span class="badge">OAuth 2.0</span>
-                    <span class="badge">Prisma ORM</span>
-                    <span class="badge">Figma</span>
-                    <span class="badge">UI/UX</span>
-                    <span class="badge">Tableau</span>
-                    <span class="badge">Power BI</span>
-                    <span class="badge">Analytics</span>
-                    <span class="badge">Agile Methodologies</span>
-                    <span class="badge">Agile Principles &amp; Scrum</span>
-                    <span class="badge">Jira</span>
-                    <span class="badge">Java</span>
-                    <span class="badge">C++</span>
-                    <span class="badge">Data Structure</span>
-                    <span class="badge">Unit Testing</span>
+                <span class="badge">Python</span>
+                <span class="badge">SQL</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">Pandas</span>
+                <span class="badge">NumPy</span>
+                <span class="badge">Matplotlib</span>
+                <span class="badge">Seaborn</span>
+                <span class="badge">Data Visualization</span>
+                <span class="badge">Power BI</span>
+                <span class="badge">Tableau</span>
+                <span class="badge">Google Sheets</span>
+                <span class="badge">Microsoft Excel</span>
+                <span class="badge">Statistics</span>
+                <span class="badge">Data Cleaning</span>
+                <span class="badge">EDA</span>
+                <span class="badge">Jupyter Notebook</span>
+                <span class="badge">Google Colab</span>
+                <span class="badge">Machine Learning</span>
+                <span class="badge">Scikit-learn</span>
+                <span class="badge">Data Analysis</span>
                 </div>
             </div>
         </aside>
@@ -360,11 +350,16 @@
             <div class="repo-filter-bar">
                 <input type="text" id="repo-search" class="local-search" placeholder="Find a repository...">
                 <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="python">Python / ML</button>
-                    <button class="filter-btn" data-filter="react">React / Next.js</button>
-                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-                    <button class="filter-btn" data-filter="ml">GenAI / LLM</button>
+                  <button class="filter-btn active" data-filter="all">All</button>
+                  <button class="filter-btn" data-filter="mysql">MySQL</button>
+                  <button class="filter-btn" data-filter="powerbi">PowerBI</button>
+                  <button class="filter-btn" data-filter="python">Python</button>
+                  <button class="filter-btn" data-filter="pandas">Pandas</button>
+                  <button class="filter-btn" data-filter="numpy">Numpy</button>
+                  <button class="filter-btn" data-filter="jupyter">Jupyter Notebook</button>
+                  <button class="filter-btn" data-filter="tableau">Tableau</button>
+                  <button class="filter-btn" data-filter="colab">Google Colab</button>
+                  <button class="filter-btn" data-filter="sheets">Google Sheets</button>
                 </div>
             </div>
 
@@ -372,7 +367,7 @@
 
                 <!-- PROJECT 1 — EDIT title, data-link, data-desc, tags, description -->
                 <div class="repo-card open-modal-btn"
-                     data-category="ml"
+                     data-category="python"
                      data-title="LLM-Powered-Chat-Assistant"
                      data-img="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=800&q=80"
                      data-link="https://github.com/UJ474"
@@ -401,65 +396,65 @@
 
                 <!-- PROJECT 2 — EDIT title, data-link, data-desc, tags, description -->
                 <div class="repo-card open-modal-btn"
-                     data-category="fullstack"
-                     data-title="Full-Stack-Task-Manager"
+                     data-category="pandas"
+                     data-title="Retail Sales Analysis"
                      data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
-                     data-link="https://github.com/UJ474"
-                     data-desc="A production-ready task management app built with Next.js, Node.js, PostgreSQL and Prisma ORM. Features OAuth 2.0 authentication, real-time updates via WebSockets, and is containerized with Docker Compose.">
+                     data-link="https://github.com/RISHIK92/SectionD_Team10_RetailAnalysis"
+                     data-desc="Retail analytics project analyzing sales data to uncover trends in revenue, customer segments, and product performance using Python, Pandas, and visualization libraries.">
                     <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Cover" class="card-cover-image">
                     <div class="repo-card-body">
                         <div class="repo-header">
                             <div class="repo-title-group">
                                 <svg class="icon"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-                                <a href="#" class="repo-title">Full-Stack-Task-Manager</a>
+                                <a href="#" class="repo-title">Retail Sales Analysis</a>
                             </div>
                             <span class="repo-badge">Public</span>
                         </div>
-                        <p class="repo-desc">Next.js + Node.js app with OAuth 2.0, PostgreSQL, Prisma ORM, and Docker Compose.</p>
+                        <p class="repo-desc">Retail dataset analysis with Pandas, EDA, and insights on sales trends and customer behavior.</p>
                         <div class="repo-tags">
-                            <span class="topic-tag">nextjs</span>
-                            <span class="topic-tag">postgresql</span>
-                            <span class="topic-tag">docker</span>
-                            <span class="topic-tag">oauth2</span>
+                            <span class="topic-tag">pandas</span>
+                            <span class="topic-tag">eda</span>
+                            <span class="topic-tag">data-analysis</span>
+                            <span class="topic-tag">visualization</span>
                         </div>
                         <div class="repo-footer">
-                            <span><span class="lang-color lang-fullstack"></span> Full Stack</span>
+                            <span><span class="lang-color lang-python"></span> Python / Pandas</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- PROJECT 3 — EDIT title, data-link, data-desc, tags, description -->
+                <!-- PROJECT 3 — Electricity Usage Anomaly Detection -->
                 <div class="repo-card open-modal-btn"
-                     data-category="python"
-                     data-title="ML-Pipeline-with-TensorFlow"
-                     data-img="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
-                     data-link="https://github.com/UJ474"
-                     data-desc="End-to-end machine learning pipeline using TensorFlow and Pandas for data preprocessing. Includes model training, evaluation with Matplotlib visualizations, and deployment via a REST API on Google Cloud Platform.">
-                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80" alt="Cover" class="card-cover-image">
+                     data-category="powerbi"
+                     data-title="Electricity Usage Anomaly Detection"
+                     data-img="https://images.unsplash.com/photo-1581091870627-3d4b4f4c3d72?auto=format&fit=crop&w=800&q=80"
+                     data-link="https://github.com/aaneesa/Section-D_Group-3_Intelligent_abnormal_electricity_usage"
+                     data-desc="District-level anomaly detection framework for residential electricity usage in Kerala using Python, Pandas, and dashboarding tools. Includes KPI computation, deviation analysis, clustering, and interactive visualization for identifying abnormal consumption patterns.">
+                    <img src="https://images.unsplash.com/photo-1581091870627-3d4b4f4c3d72?auto=format&fit=crop&w=800&q=80" alt="Cover" class="card-cover-image">
                     <div class="repo-card-body">
                         <div class="repo-header">
                             <div class="repo-title-group">
                                 <svg class="icon"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-                                <a href="#" class="repo-title">ML-Pipeline-with-TensorFlow</a>
+                                <a href="#" class="repo-title">Electricity Usage Anomaly Detection</a>
                             </div>
                             <span class="repo-badge">Public</span>
                         </div>
-                        <p class="repo-desc">End-to-end ML pipeline with TensorFlow, Pandas preprocessing, and GCP deployment.</p>
+                        <p class="repo-desc">Electricity consumption anomaly detection with EDA, KPI tracking, clustering, and dashboard insights.</p>
                         <div class="repo-tags">
-                            <span class="topic-tag">tensorflow</span>
-                            <span class="topic-tag">pandas</span>
-                            <span class="topic-tag">gcp</span>
-                            <span class="topic-tag">machine-learning</span>
+                            <span class="topic-tag">eda</span>
+                            <span class="topic-tag">data-analysis</span>
+                            <span class="topic-tag">dashboard</span>
+                            <span class="topic-tag">clustering</span>
                         </div>
                         <div class="repo-footer">
-                            <span><span class="lang-color lang-python"></span> Python / ML</span>
+                            <span><span class="lang-color lang-python"></span> Data Analysis / Dashboard</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- PROJECT 4 — EDIT title, data-link, data-desc, tags, description -->
                 <div class="repo-card open-modal-btn"
-                     data-category="react"
+                     data-category="powerbi"
                      data-title="React-Native-Analytics-App"
                      data-img="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80"
                      data-link="https://github.com/UJ474"
@@ -492,7 +487,10 @@
 
             <div class="contrib-graph">
                 <div class="contrib-title">Contributions in the last year</div>
-                <div class="graph-squares" id="contrib-squares"></div>
+                <img id="contrib-img" 
+                     src="https://ghchart.rshah.org/39d353/UJ474" 
+                     alt="GitHub Contributions Graph" 
+                     style="width: 100%; border-radius: 6px;">
             </div>
 
         </main>
@@ -507,7 +505,7 @@
             <a href="mailto:your.email@gmail.com">Contact</a>
         </div>
     </footer>
-
+    
     <!-- MODAL -->
     <div class="modal-overlay" id="modal">
         <div class="modal-content">
@@ -532,14 +530,6 @@
         // Dynamic footer year
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Generate contribution graph
-        const squares = document.getElementById('contrib-squares');
-        const classes = ['g-sq', 'g-sq g-l1', 'g-sq g-l2', 'g-sq', 'g-sq', 'g-sq g-l3', 'g-sq', 'g-sq g-l4', 'g-sq g-l1'];
-        for (let i = 0; i < 200; i++) {
-            const d = document.createElement('div');
-            d.className = classes[Math.floor(Math.random() * classes.length)];
-            squares.appendChild(d);
-        }
 
         // Search & Filter
         const searchInput = document.getElementById('repo-search');
